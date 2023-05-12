@@ -36,7 +36,7 @@ and motivate further research on the remaining disparities for improving model p
 We provide an environment file that can be used to install the project dependencies. Open your terminal, 
 navigate to the directory you saved the file to, and run:
 ```
-conda create -f environment.yml
+conda env create -f environment.yml
 ```
 
 # Run the listening test

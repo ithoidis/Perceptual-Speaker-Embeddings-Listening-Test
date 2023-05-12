@@ -365,7 +365,7 @@ def check_data(source_folder='Audio/LibriSpeech'):
     assert os.path.exists('Audio')
     if not os.path.exists(source_folder):
         if not os.path.exists('Audio/test-clean.tar.gz'):
-            print('Downloading LibriSpeech test-clean subset (368MB)...')
+            print('Downloading LibriSpeech test-clean subset...')
             with tqdm(unit='B', unit_scale=True, unit_divisor=1024, miniters=1, desc='LibriSpeech') as t:
                 urllib.request.urlretrieve('https://www.openslr.org/resources/12/test-clean.tar.gz',
                                            'Audio/test-clean.tar.gz', reporthook=hook(t))

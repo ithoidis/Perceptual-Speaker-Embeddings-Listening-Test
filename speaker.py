@@ -198,10 +198,9 @@ def speaker_discrimination_block(participant, session, ear='both', level=-5, n_t
 
 
 def run_speaker_discrimination(participant):
-    check_data()
     speaker_discrimination_block('training', session=0, n_trials=5, feedback=True)
-    # speaker_discrimination_block(participant, session=0)
-    # speaker_discrimination_block(participant, session=1)
+    speaker_discrimination_block(participant, session=0)
+    speaker_discrimination_block(participant, session=1)
     speaker_discrimination_block(participant, session=0, noise='iltass', snr=5)
     speaker_discrimination_block(participant, session=1, noise='iltass', snr=5)
 
@@ -209,6 +208,7 @@ def run_speaker_discrimination(participant):
 window = None
 if __name__ == '__main__':
     participant = input("Type your participant ID: ")
+    check_data()
     window = visual.Window(fullscr=True, pos=[0, 0], color=(0, 0, 0))
     run_speaker_discrimination(participant)
     window.close()

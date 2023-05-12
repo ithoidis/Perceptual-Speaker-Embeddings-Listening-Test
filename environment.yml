@@ -1,4 +1,4 @@
-name: psychopy
+name: psychopy2
 channels:
   - ltfatpy
   - anaconda
@@ -99,4 +99,4 @@ dependencies:
     - tabulate==0.8.7
     - traitlets==4.3.3
     - wcwidth==0.2.5
-prefix: /Users/ithoidis/opt/anaconda3/envs/psychopy
+prefix: /Users/ithoidis/opt/anaconda3/envs/psychopy2
