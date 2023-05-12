@@ -44,6 +44,8 @@ conda env create -f environment.yml
 Running the `speaker.py` file will check and download (if needed) all the necessary data before starting the listening 
 test procedure. 
 
+![plot](./Audio/screenshot.png)
+
 ## Results
 
 After running the listening test, the result file can be found in the `Results/speaker` directory.
